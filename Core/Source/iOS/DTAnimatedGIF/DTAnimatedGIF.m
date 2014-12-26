@@ -97,7 +97,7 @@ static UIImage *DTAnimatedGIFFromImageSource(CGImageSourceRef source)
 		
 		for (NSUInteger j=0; j<repeat; j++)
 		{
-			[frames addObject:frame];
+			 [frames addObject:[UIImage imageWithCGImage:cgImage scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp]];
 		}
 		
 		CGImageRelease(cgImage);
